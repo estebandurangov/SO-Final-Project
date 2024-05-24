@@ -7,7 +7,7 @@ def createList():
     x = randint(4, 15)
     list = []
     for i in range(x):
-        list.append(randint(1,20))
+        list.append(randint(1,60))
     return list
 
 def find_min_position(list):
@@ -72,11 +72,12 @@ def adjust_list(lst, length=15, fill_value=0):
         lst.append(fill_value)
     return lst
     
+import pandas as pd
 def main():
+   
+    data_lists = [['N_Jobs', 'J1', 'J2', 'J3', 'J4', 'J5', 'J6', 'J7', 'J8', 'J9', 'J10', 'J11', 'J12', 'J13', 'J14', 'J15', 'Best_Policy', 'Quantum']]
 
-    data_lists = []
-
-    for i in range(1000):
+    while len(data_lists) < 1000:
         list = createList()
         n_Jobs = len(list)
         _RR  = []
@@ -97,7 +98,7 @@ def main():
         data_lists.append(data)
 
 
-        with open('output.csv', 'w', newline='') as file:
+        with open('ALL.csv', 'w', newline='') as file:
             writer = csv.writer(file)
             writer.writerows(data_lists)
 
