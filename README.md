@@ -1,9 +1,12 @@
 ## Scheduling process simulator
 
 Made by:
-Esteban Durango
-Miguel Angel Alvarez
-Saray Cubillos García
+
+**Esteban Durango**
+
+**Miguel Angel Alvarez**
+
+**Saray Cubillos García**
 
 # README
 
