@@ -98,7 +98,7 @@ def main():
         data_lists.append(data)
 
 
-        with open('ALL.csv', 'w', newline='') as file:
+        with open('output.csv', 'w', newline='') as file:
             writer = csv.writer(file)
             writer.writerows(data_lists)
 
